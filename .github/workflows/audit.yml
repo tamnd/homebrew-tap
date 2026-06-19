@@ -1,0 +1,33 @@
+name: audit
+
+# Keep the casks installable. Every push and pull request runs Homebrew's own
+# style and audit checks over the tap, so a cask with a wrong field name, a
+# missing sha256, or a malformed URL is caught here rather than by a user's
+# failed `brew install`. GoReleaser commits straight to the default branch, so
+# the push trigger also acts as a post-release tripwire.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Tap this repository
+        run: |
+          mkdir -p "$(brew --repository)/Library/Taps/tamnd"
+          ln -s "$GITHUB_WORKSPACE" "$(brew --repository)/Library/Taps/tamnd/homebrew-tap"
+
+      - name: brew style
+        run: brew style tamnd/tap
+
+      - name: brew audit
+        run: brew audit --tap tamnd/tap --cask
