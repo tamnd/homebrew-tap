@@ -4,22 +4,22 @@ cask "tori" do
 
   on_macos do
     on_intel do
-      sha256 "19eda3e205029f43f2e8d81a514b668775f957217a5e13c583a06dca36b08e2d"
+      sha256 "78c73fdc222e822fcb5d511d5e97c265adb670d44e4703d15f96f2e7d7c1beed"
       url "https://github.com/tamnd/tori/releases/download/v#{version}/tori_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "66a1706acb22711cc3e19793dd6a059fe7ffcb11fc7377bd343fcbefa7b8ad98"
+      sha256 "04cc6545adb846001d9d6cc62b0d88c5614914575080cc3f6037cfcc5e51aa9e"
       url "https://github.com/tamnd/tori/releases/download/v#{version}/tori_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "a87a71bd7766096aff010f4d8ba9cedfdd5498acbdf46635ea7e193652e29a0c"
+      sha256 "fe3024c6cff8b51d2b01231b6caa7c30d0991026eb84f9780ec0f96df2d8089a"
       url "https://github.com/tamnd/tori/releases/download/v#{version}/tori_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "b20a4d5c4f10e84ac684812e1e7c5f9f7edcd97f6d003ea8ae57ff216a779599"
+      sha256 "88b811918d1b15c450b27f394de36bfb73ae21dcd8e57a9d11be133116c7a24c"
       url "https://github.com/tamnd/tori/releases/download/v#{version}/tori_#{version}_linux_arm64.tar.gz"
     end
   end
