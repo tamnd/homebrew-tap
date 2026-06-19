@@ -4,22 +4,22 @@ cask "yomi" do
 
   on_macos do
     on_intel do
-      sha256 "bf73cfb92deade7cc96dcd2be6fcb436fc4289cbd3be76df8247d3563c933103"
+      sha256 "54324faa86c99ed918be1e00c784cace8e88f86453af4bc84a7c0bf90397ea61"
       url "https://github.com/tamnd/yomi/releases/download/v#{version}/yomi_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "e3f231ffb505a7c2d4c660fd00fd95c7c8854a208d5fb7af9b249601146a8533"
+      sha256 "25a9a5916f9f8f385972dd0dcce24121c28a143e00b3ce8c96b1cb4445cee8fc"
       url "https://github.com/tamnd/yomi/releases/download/v#{version}/yomi_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "810faa52d7a6001fe27ba504cd0594845f9a259b9267327f37b822b896966a98"
+      sha256 "0a00be771f77a2b416f26ba4cf4c2fdeeece9ab66ab1322c084fdedebbbd5430"
       url "https://github.com/tamnd/yomi/releases/download/v#{version}/yomi_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "178339b39a1936db495c1cfe26da29004ca63271bb30fb784827f9a1cad8dcd2"
+      sha256 "191dbd8cbd10500ef264cc2c100d099064bb9c6f21911f3f5747adfd286ca602"
       url "https://github.com/tamnd/yomi/releases/download/v#{version}/yomi_#{version}_linux_arm64.tar.gz"
     end
   end
