@@ -4,22 +4,22 @@ cask "kage" do
 
   on_macos do
     on_intel do
-      sha256 "8184ac6f8c440698946a848fc1eec2fc3c952a3859d6410cdca03ba1af93b15b"
+      sha256 "ae79476b3c275cc63c79ae4d47de1d4ef1fe55adcfa9004e92946a38c25458e6"
       url "https://github.com/tamnd/kage/releases/download/v#{version}/kage_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "a33724127dcfcef7af4ed11d913cacc12cad400a04f4e1fe897dcf440d7c84c9"
+      sha256 "bc1b65cdb692b9c612c187ab286a9d5fb23a2c98edc45ed9bf9832d6d2b137c3"
       url "https://github.com/tamnd/kage/releases/download/v#{version}/kage_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "fe14c7c447a9bafa9399108634ef84f6a3e2cf89572731db486809c92d4b983e"
+      sha256 "1dd2ab692a79d3351613ed1eeb5a3f47424daedaec22211d45caddd7eadd386e"
       url "https://github.com/tamnd/kage/releases/download/v#{version}/kage_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "b4b001554509a5ac06888fb0ca061ce1d4964fd41eebfdc31cace91735e7c11a"
+      sha256 "3d89d31067b5cc901b3f6fe56991d6a77c1aa4d1041da6bb6baccf4039296d56"
       url "https://github.com/tamnd/kage/releases/download/v#{version}/kage_#{version}_linux_arm64.tar.gz"
     end
   end
