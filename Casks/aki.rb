@@ -4,22 +4,22 @@ cask "aki" do
 
   on_macos do
     on_intel do
-      sha256 "d67272c022b9fc30a56970762b63a22c39f3c544ed67f03e3fa5f44213f5db51"
+      sha256 "411cb6fe9c5e47da22e4e918da857a5fea7cd74ecab6724a20658cf0df2822e7"
       url "https://github.com/tamnd/aki/releases/download/v#{version}/aki_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "6be1c5ce643b8f9c384a131488070bb5f0263ba1a05763e611c5ff8dfa92c93c"
+      sha256 "9a3100e511968b138b9a0b7ca7cb274c19e2aff73451b1b473a5a6e71b417097"
       url "https://github.com/tamnd/aki/releases/download/v#{version}/aki_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "bbdcbb0106b1d5090f3e9e6a9aea33364fcdda8ab2df31b8a9b9a5738361d9d4"
+      sha256 "42b294696291050c1748f51b75f0119ce7928a1ef19db59a2bf67e895656c7e3"
       url "https://github.com/tamnd/aki/releases/download/v#{version}/aki_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "7f266b1f5da653ef9e592ab1d9451d6708a911299427592ca913a98301995c9b"
+      sha256 "a2a207339c3b35f8910efc43b10586fe5ab7f9badc7bb422e102eece4b5b0d77"
       url "https://github.com/tamnd/aki/releases/download/v#{version}/aki_#{version}_linux_arm64.tar.gz"
     end
   end
