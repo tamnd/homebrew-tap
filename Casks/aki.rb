@@ -34,6 +34,10 @@ cask "aki" do
 
   binary "aki"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/aki"]
+  end
+
   # No zap stanza required
 
 end
