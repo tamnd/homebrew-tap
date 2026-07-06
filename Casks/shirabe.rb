@@ -34,6 +34,11 @@ cask "shirabe" do
 
   binary "shirabe"
 
-  # No zap stanza required
+  postflight do
+    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status.zero?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/shirabe"]
+    end
+  end
 
+  # No zap stanza required
 end
